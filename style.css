@@ -1,0 +1,811 @@
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: true;
+}
+
+
+
+/* Hide radio buttons */
+input[type="radio"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+
+
+.cardsCarrusel{
+  --img-w: 200px;
+  --duration: 300ms;
+  --img-easing: cubic-bezier(0.34, 1.56, 0.64, 1);
+  width: min(100% - 4rem, 800px);
+  margin-inline: auto;
+  display: grid;
+  
+  counter-reset: my-counter;
+}
+
+.cardCarrusel{
+    background-color: #bfb6d3;
+    border-radius: 25px;
+    border: unset;
+  --cards-grid-cols: auto;
+  --cards-grid-rows: var(--img-w) auto;
+  --cards-grid-gap: 2rem;
+  --cards-footer-justify: center;
+  
+  grid-area: 1/1;
+  display: grid;
+  place-items: center; 
+  grid-template-columns: var(--cards-grid-cols);
+  grid-template-rows: var(--cards-grid-rows);
+  gap: var(--cards-grid-gap);
+  
+}
+
+@media (600px < width){
+  .cardCarrusel{
+      --cards-grid-cols: var(--img-w) auto;
+      --cards-grid-rows: auto;
+      --cards-grid-gap: 4rem;
+      --cards-footer-justify: start;
+  }
+}
+
+
+.cardCarrusel-img{
+  width: 220px;
+  height: 280px;
+  aspect-ratio: 1 / 1 ;
+  rotate: var(--angle, 0deg);
+  border-radius: 10px;
+  border: 3px solid #FFF;
+  overflow: hidden;
+  transform-origin: center;
+  object-fit: cover;
+  box-shadow: 0 0 5px 3px rgba(0 0 0 / .05);
+}
+
+
+
+input:nth-of-type(1):checked + .cardCarrusel ~ .cardCarrusel > .cardCarrusel-img{
+  animation: straighten-img-1 calc(var(--duration) * 2) forwards;
+  animation-timing-function: var(--img-easing);
+}
+.cardCarrusel:has(~input:nth-of-type(2):checked) > .cardCarrusel-img,
+input:nth-of-type(2):checked + .cardCarrusel ~ .cardCarrusel > .cardCarrusel-img{
+  animation: straighten-img-2 calc(var(--duration) * 2) forwards;
+  animation-timing-function: var(--img-easing);
+}
+.cardCarrusel:has(~input:nth-of-type(3):checked) > .cardCarrusel-img,
+input:nth-of-type(3):checked + .cardCarrusel ~ .cardCarrusel > .cardCarrusel-img{
+  animation: straighten-img-3 calc(var(--duration) * 2) forwards;
+  animation-timing-function: var(--img-easing);
+}
+.cardCarrusel:has(~input:nth-of-type(4):checked) > .cardCarrusel-img,
+input:nth-of-type(4):checked + .cardCarrusel ~ .cardCarrusel > .cardCarrusel-img{
+  animation: straighten-img-4 calc(var(--duration) * 2) forwards;
+  animation-timing-function: var(--img-easing);
+}
+.cardCarrusel:has(~input:nth-of-type(5):checked) > .cardCarrusel-img,
+input:nth-of-type(5):checked + .cardCarrusel ~ .cardCarrusel > .cardCarrusel-img{
+  animation: straighten-img-5 calc(var(--duration) * 2) forwards;
+  animation-timing-function: var(--img-easing);
+}
+.cardCarrusel:has(~input:nth-of-type(6):checked) > .cardCarrusel-img,
+input:nth-of-type(6):checked + .cardCarrusel ~ .cardCarrusel > .cardCarrusel-img{
+  animation: straighten-img-6 calc(var(--duration) * 2) forwards;
+  animation-timing-function: var(--img-easing);
+}
+.cardCarrusel:has(~input:nth-of-type(7):checked) > .cardCarrusel-img,
+input:nth-of-type(7):checked + .cardCarrusel ~ .cardCarrusel > .cardCarrusel-img{
+  animation: straighten-img-7 calc(var(--duration) * 2) forwards;
+  animation-timing-function: var(--img-easing);
+}/*CARD 8*/
+.cardCarrusel:has(~input:nth-of-type(8):checked) > .cardCarrusel-img,
+input:nth-of-type(8):checked + .cardCarrusel ~ .cardCarrusel > .cardCarrusel-img{
+  animation: straighten-img-8 calc(var(--duration) * 2) forwards;
+  animation-timing-function: var(--img-easing);
+}
+.cardCarrusel:has(~input:nth-of-type(9):checked) > .cardCarrusel-img,
+input:nth-of-type(9):checked + .cardCarrusel ~ .cardCarrusel > .cardCarrusel-img{
+  animation: straighten-img-9 calc(var(--duration) * 2) forwards;
+  animation-timing-function: var(--img-easing);
+}
+.cardCarrusel:has(~input:nth-of-type(10):checked) > .cardCarrusel-img,
+input:nth-of-type(10):checked + .cardCarrusel ~ .cardCarrusel > .cardCarrusel-img{
+  animation: straighten-img-10 calc(var(--duration) * 2) forwards;
+  animation-timing-function: var(--img-easing);
+}
+.cardCarrusel:has(~input:nth-of-type(11):checked) > .cardCarrusel-img,
+input:nth-of-type(11):checked + .cardCarrusel ~ .cardCarrusel > .cardCarrusel-img{
+  animation: straighten-img-11 calc(var(--duration) * 2) forwards;
+  animation-timing-function: var(--img-easing);
+}
+.cardCarrusel:has(~input:nth-of-type(12):checked) > .cardCarrusel-img,
+input:nth-of-type(12):checked + .cardCarrusel ~ .cardCarrusel > .cardCarrusel-img{
+  animation: straighten-img-12 calc(var(--duration) * 2) forwards;
+  animation-timing-function: var(--img-easing);
+}
+.cardCarrusel:has(~input:nth-of-type(13):checked) > .cardCarrusel-img,
+input:nth-of-type(13):checked + .cardCarrusel ~ .cardCarrusel > .cardCarrusel-img{
+  animation: straighten-img-13 calc(var(--duration) * 2) forwards;
+  animation-timing-function: var(--img-easing);
+}
+.cardCarrusel:has(~input:nth-of-type(14):checked) > .cardCarrusel-img,
+input:nth-of-type(14):checked + .cardCarrusel ~ .cardCarrusel > .cardCarrusel-img{
+  animation: straighten-img-14 calc(var(--duration) * 2) forwards;
+  animation-timing-function: var(--img-easing);
+}
+.cardCarrusel:has(~input:nth-of-type(15):checked) > .cardCarrusel-img,
+input:nth-of-type(15):checked + .cardCarrusel ~ .cardCarrusel > .cardCarrusel-img{
+  animation: straighten-img-15 calc(var(--duration) * 2) forwards;
+  animation-timing-function: var(--img-easing);
+}
+.cardCarrusel:has(~input:nth-of-type(16):checked) > .cardCarrusel-img,
+input:nth-of-type(16):checked + .cardCarrusel ~ .cardCarrusel > .cardCarrusel-img{
+  animation: straighten-img-16 calc(var(--duration) * 2) forwards;
+  animation-timing-function: var(--img-easing);
+}
+.cardCarrusel:has(~input:nth-of-type(17):checked) > .cardCarrusel-img,
+input:nth-of-type(17):checked + .cardCarrusel ~ .cardCarrusel > .cardCarrusel-img{
+  animation: straighten-img-17 calc(var(--duration) * 2) forwards;
+  animation-timing-function: var(--img-easing);
+}
+.cardCarrusel:has(~input:nth-of-type(18):checked) > .cardCarrusel-img,
+input:nth-of-type(18):checked + .cardCarrusel ~ .cardCarrusel > .cardCarrusel-img{
+  animation: straighten-img-18 calc(var(--duration) * 2) forwards;
+  animation-timing-function: var(--img-easing);
+}
+
+/* as CSS can't remove animations, we change the animation according to which checkbox is checked  - all animations are the same (would be simpler with SCSS) */
+@keyframes straighten-img-1 { 50%{ --angle: 0deg;} }
+@keyframes straighten-img-2 { 50%{ --angle: 0deg;} }
+@keyframes straighten-img-3 { 50%{ --angle: 0deg;} }
+@keyframes straighten-img-4 { 50%{ --angle: 0deg;} }
+@keyframes straighten-img-5 { 50%{ --angle: 0deg;} }
+@keyframes straighten-img-6 { 50%{ --angle: 0deg;} }
+@keyframes straighten-img-7 { 50%{ --angle: 0deg;} }
+@keyframes straighten-img-8 { 50%{ --angle: 0deg;} }
+@keyframes straighten-img-9 { 50%{ --angle: 0deg;} }
+@keyframes straighten-img-10 { 50%{ --angle: 0deg;} }
+@keyframes straighten-img-11 { 50%{ --angle: 0deg;} }
+@keyframes straighten-img-12 { 50%{ --angle: 0deg;} }
+@keyframes straighten-img-13 { 50%{ --angle: 0deg;} }
+@keyframes straighten-img-14 { 50%{ --angle: 0deg;} }
+@keyframes straighten-img-15 { 50%{ --angle: 0deg;} }
+@keyframes straighten-img-16 { 50%{ --angle: 0deg;} }
+@keyframes straighten-img-17 { 50%{ --angle: 0deg;} }
+@keyframes straighten-img-18 { 50%{ --angle: 0deg;} }
+
+
+/* stacking order - these are updated according to which card is selected */
+.cardCarrusel{
+  z-index: -1;
+}
+input:checked + .cardCarrusel{
+  z-index:10 !important;
+}
+/* next card checked - place behind */
+.cardCarrusel:has(+input:checked){
+  z-index:9;
+}
+/* next card +1 checked - place behind */
+.cardCarrusel:has(+input + .cardCarrusel + input:checked){
+  z-index:8;
+}
+/* next card +2 checked - place behind */
+.cardCarrusel:has(+input + .cardCarrusel +input + .cardCarrusel + input:checked){
+  z-index:7;
+}
+/* next card +3 checked - place behind */
+.cardCarrusel:has(+input + .cardCarrusel +input + .cardCarrusel +input + .cardCarrusel + input:checked){
+  z-index:6;
+}
+/* next card +4 checked - place behind */
+.cardCarrusel:has(+input + .cardCarrusel +input + .cardCarrusel +input + .cardCarrusel +input + .cardCarrusel + input:checked){
+  z-index:5;
+}
+/* next card +5 checked - place behind */
+.cardCarrusel:has(+input + .cardCarrusel +input + .cardCarrusel +input +input + .cardCarrusel +input + .cardCarrusel +input + .cardCarrusel + input:checked){
+  z-index:4;
+}
+/* next card +6 checked - place behind */
+.cardCarrusel:has(+input + .cardCarrusel +input + .cardCarrusel +input  + .cardCarrusel +input +input + .cardCarrusel +input + .cardCarrusel +input + .cardCarrusel + input:checked){
+  z-index:3;
+}
+
+.cardCarrusel-data{
+  display: grid;
+  gap: 1rem;
+}
+.cardCarrusel-data > .cardCarrusel-num{
+  opacity: var(--data-opacity, 0);
+  font-size: .8rem;
+  color: #666;
+}
+.cardCarrusel-data > p{
+  font-size: 0.9rem;
+
+}
+.cardCarrusel-data > h2,
+.cardCarrusel-data > p{
+  transition: var(--duration) ease-in-out;
+  transition-delay: var(--data-delay,0ms);
+  opacity: var(--data-opacity, 0);
+  translate: 0 var(--data-y, 20px);
+}
+.cardCarrusel-data > footer{
+  display: flex;
+  justify-content: var(--cards-footer-justify);
+  gap: 2rem;
+}
+.cardCarrusel-data > footer label{
+  margin-block-start: auto;
+  cursor: pointer;
+  pointer-events: var(--card-events, none);
+  opacity: var(--data-opacity, 0);
+  transition: color var(--duration) ease-in-out;
+  color: var(--label-clr-txt,#000);
+  background-color:var(--label-clr-bg,#EEE);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  aspect-ratio: 1/1;
+  display: grid;
+  place-content: center;
+  transition: background-color 300ms ease-in-out,color  300ms ease-in-out;
+}
+
+
+input:checked:focus-visible + .cardCarrusel > .cardCarrusel-data > footer label,
+.cardCarrusel-data > footer label:hover{
+  --label-clr-txt: #FFF;
+  --label-clr-bg: steelblue;
+}
+
+input:checked + .cardCarrusel{
+  --data-opacity: 1;
+  --data-y: 0;
+  --data-delay: var(--duration);
+  --card-events: auto;
+  transition: z-index;
+  transition-delay: 300ms;
+  /*z-index: 1;*/
+}
+
+input:checked +.cardCarrusel > .cardCarrusel-img{
+  animation: reveal-img calc(var(--duration) * 2) forwards;
+}
+
+@keyframes reveal-img{
+  50%{
+    translate: -150% 0;
+    --angle: 0deg;
+  }
+}
+
+
+
+
+
+
+.video-container {
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+
+.tmLetraE {
+    font-size: 14px;
+}
+
+.tmLetraE2 {
+    font-size: 13px;
+}
+
+.tmLetraE3 {
+    font-size: 13px;
+}
+
+.TituloORG {
+    font-size: 25px;
+}
+
+.TMletra{
+    font-size: 20px;
+    font-weight: 400;
+}
+.pdLR{
+    width: 80px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 20px;
+}
+
+.tmPro01{
+    width: 700px;
+}
+.tmPro02{
+    width: 700px;
+}
+.tmVideo{
+    width: 74%;
+    height: 400px;
+}
+
+.BGmorado{
+    background: linear-gradient(0deg,rgba(0, 0, 0, 0) 0%, rgba(93, 93, 206, 0.59) 100%);
+}
+
+.bgiTamaño{
+    /*background-image: url("/Imagenes/BI.png");*/
+    width: 100%;
+    height: 400px;
+}
+
+.alinVideo{
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+.bannerTM {
+    height: 300px;
+}
+
+.FSize {
+  font-size: 18px
+}
+
+.FW {
+  font-weight: 600;
+}
+
+.txtShadow{
+    text-shadow: #49176d 1px 0 10px;
+}
+
+/***Puntero***/
+
+.Puntero {
+  background-image: linear-gradient(to right,
+      #272727,
+      #272727,
+      #272727);
+  background-size: 200% 100%;
+  background-position: -100%;
+  display: inline-block;
+  padding: 2px 0;
+  position: relative;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.Puntero:before {
+  content: '';
+  background: #49176d;
+  display: block;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  transition: all 0.3s ease-in-out;
+}
+
+.Puntero:hover {
+  background-position: 0;
+  text-shadow: 0 0 3px #49176d;
+}
+
+.Puntero:hover::before {
+  width: 100%;
+}
+
+/*
+.BorderBook:hover{
+        border: 2px solid #49176d;
+    padding: 10px;
+    border-radius: 25px;
+}*/
+
+.Bcolor {
+    background-color: #49176d;
+    border-color: #49176d;
+    color: #ffffff;
+}
+
+.Bcolor:hover {
+    border-color: #724394 !important;
+    background-color: #724394 !important; 
+    color: #ffffff;
+    box-shadow: 0 5px 13px -2px #724394;
+}
+
+.PosterTM{
+    width: 750px;
+}
+
+.ptTitle{
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.ptTitle2{
+    padding-top: 80px;
+    padding-bottom: 30px;
+}
+
+.ptTitle4{
+    padding-top: 80px;
+}
+
+.colorUPP {
+    color: #49176d;
+}
+
+.TituloQS {
+    color: #49176d;
+    text-align: center;
+    font-weight: 750;
+}
+
+.Titulo {
+    color: #49176d;
+    text-align: center;
+    font-weight: 850;
+}
+
+.TituloMo {
+    text-align: center;
+    font-weight: 550;
+}
+.TituloMo2 {
+    font-weight: 450;
+}
+
+.Titulo2 {
+    color: #49176d;
+    text-align: center;
+    font-weight: 345;
+}
+
+
+.ptCard{
+    padding-top: 30px;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+.shadowCard{
+    box-shadow: 14px 14px 32px -15px rgba(0,0,0,0.98);
+    -webkit-box-shadow: 14px 14px 32px -15px rgba(0,0,0,0.98);
+    -moz-box-shadow: 14px 14px 32px -15px rgba(0,0,0,0.98);
+}
+
+.zoom{
+  transition: 0.8s ease;
+   -moz-transition: 1.1s ease; /* Firefox */
+   -webkit-transition: 1.1s ease; /* Chrome - Safari */
+   -o-transition: 1.1s ease; /* Opera */
+}
+.zoom:hover{
+  transform : scale(1.1);
+  -moz-transform : scale(1.1); /* Firefox */
+  -webkit-transform : scale(1.1); /* Chrome - Safari */
+  -o-transform : scale(1.1); /* Opera */
+  -ms-transform : scale(1.1); /* IE9 */
+}
+
+.ImgCard{
+    width: 190px;
+    height: 255px;
+}
+/***Footer***/
+.FooterColorTxt {
+    color: #ffffff;
+    text-align: left;
+    padding-top: 15px;
+}
+
+.FooterColorTxt2 {
+    color: #ffffff;
+    text-align: left;
+}
+
+.FooterImgAL {
+    text-align: left;
+}
+
+section {
+    padding: 20px 0;
+}
+
+.FooterIcon {
+    padding-right: 20px;
+}
+
+#footer {
+    background-color: rgb(98, 19, 51, 1) !important;
+}
+
+.FooterShadow:hover {
+    text-shadow: 0 0 3px #ffffff;
+}
+/***Footer***/
+.ptbColoquio{
+    padding-bottom: 30px;
+}
+/***Nav1***/
+.nav1 {
+    background-color: #bc955b;
+}
+
+.N1 {
+    background-image: linear-gradient(
+      to right,
+      #ffff,
+      #fff,
+      #ffff 
+    );
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 5px 0;
+    position: relative;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .N1:before{
+    content: '';
+    background: #ffffff;
+    display: block;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .N1:hover {
+   background-position: 0;
+   text-shadow: 0 0 3px #ffffff;
+  }
+  
+  .N1:hover::before{
+    width: 100%;
+  }
+
+.N1PTPB {
+    padding-top: 20px;
+    padding-bottom: 20PX;
+}
+/***Nav1***/
+
+.navbar-toggler {
+  border-color: white; /* Borde blanco */
+}
+
+.navbar-toggler-icon {
+  background-image: url("Imagenes/menuC.png");
+}
+
+.navbar-toggler-icon:hover {
+    border-color: #ffffff !important;
+    color: #ffffff;
+}
+/***Nav2***/
+.N2Color {
+    color: #ffffff;
+}
+
+.N2Shadow:hover {
+    text-shadow: 0 0 3px #ffffff;
+}
+
+.N2 {
+    background-color: rgb(98, 19, 51);
+}
+
+.ResponsiveLetter {
+  font-size: calc(0.5em + 1vw);
+}
+/***Nav2***/
+
+
+.ptP {
+    padding-top: 30px;
+}
+
+.pbP {
+    padding-bottom: 30px;
+}
+
+
+
+
+/****ECYAD****/
+
+.TituloAvi {
+    padding-top: 50px;
+}
+
+.TituloAvi2 {
+    padding-top: 20px;
+}
+
+.TitulosCenter {
+    text-align: center;
+}
+
+.CardAlignBT2 {
+    padding-bottom: 30px;
+    padding-bottom: 12px;
+}
+
+.CardAlignBT {
+    padding-bottom: 8px;
+}
+
+
+.correoTP {
+    padding-top: 20px;
+}
+
+.TituloAviB {
+    padding-bottom: 50px;
+}
+
+.TituloAviB6 {
+    padding-top: 35px;
+    padding-bottom: 50px;
+}
+
+.ImgCS {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+body { 
+    background-color:#f1f1f2
+}
+
+.ColorFondo {
+    background: rgb(170,235,255);
+    background: linear-gradient(0deg, rgba(170,235,255,0.5662640056022409) 0%, rgba(221,178,255,0.5130427170868348) 100%);
+}
+
+.lineatxt {
+    text-decoration: underline;
+}
+
+.listul {
+    font-size: 15px;
+    color: #7a7a7a;
+}
+
+.listxt {
+    font-size: 12px;
+    color: #49176d;
+}
+
+.Bcolor {
+    background-color: #49176d;
+    border-color: #49176d;
+    color: #ffffff;
+}
+
+.Bcolor:hover {
+    border-color: #724394 !important;
+    background-color: #724394 !important; 
+    color: #ffffff;
+    box-shadow: 0 5px 13px -2px #724394;
+}
+
+.btn-primary:hover{
+    background-color: #724394;
+
+
+}
+
+.PBTCard {
+    padding-top: 20px;
+}
+
+.PBTCard2 {
+    padding-bottom: 40px;
+}
+.PBTCard3 {
+    padding-bottom: 20px;
+}
+
+.topBCyD {
+    margin-top:80px;
+}
+
+.topBCyD2 {
+    margin-top:25px;
+}
+
+.colorMor {
+    color: #49176d;
+}
+
+.AlinIT {
+    align-items: center;
+    text-align: center;
+}
+
+.PTB2 {
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.TituloTop {
+    padding-top: 80px;
+}
+
+.listxt2 {
+    font-size: 18px;
+    color: #303030;
+}
+
+.PDFShadowDD:hover {
+    text-shadow: 0 0 3px #303030;
+}
+
+.ShadowRedes:hover {
+    filter: drop-shadow(0px 0px 10px #8c61aa);
+}
+
+.ShadowPDFicon:hover {
+    filter: drop-shadow(0px 0px 10px #303030);
+}
+
+.ImageSeparadorM {
+    background-image: url("/CSS/ImgAvisos/SeparadoresM1.png") !important;
+}
+
+.IconoPDF{
+    width: 35px;
+}
+
+.CatalogotxtColor {
+    text-align: justify; 
+    color: #303030;
+}
+
+.TopCatalogo {
+    padding-top: 50px;
+    text-align: center; 
+    color: #303030; 
+    font-weight: 900;
+}
+
+
+.ShadowImage {
+    box-shadow: 5px 5px 8px 5px rgb(20, 20, 20, 0.3);
+}
+
+/****ECYAD****/
+
+
+
+
+
+
+
+
