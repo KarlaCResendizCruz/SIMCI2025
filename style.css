@@ -1,8 +1,4 @@
 /***SIMCI Inicio***/
-
-
-
-
     .DWtxt {
       animation: bajarSuave 1.5s ease-out forwards;
       opacity: 0;
@@ -18,6 +14,9 @@
 
 
     /***INDEX INICIO***/
+     .BorderIX {
+        padding: 10px 10px 10px 10px;
+      }
     .aIX {
         display: inline-block;
         text-transform: uppercase;
@@ -116,7 +115,7 @@
   font-weight: 500;
 }
  .BorderINT {
-  padding: 10px 10px 10px 10px;
+  padding: 0px 10px 0px 10px;
 }
 .aEF {
   display: inline-block;
@@ -260,7 +259,7 @@
 
 
         .ptpbDW{
-          padding-top: 20px;
+          padding-top: 110px;
           padding-bottom: 50px;
       }
 
