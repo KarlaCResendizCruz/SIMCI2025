@@ -1,8 +1,280 @@
-@property --angle {
-  syntax: "<angle>";
-  initial-value: 0deg;
-  inherits: true;
+/***SIMCI Inicio***/
+
+
+
+
+    .DWtxt {
+      animation: bajarSuave 1.5s ease-out forwards;
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+
+    @keyframes bajarSuave {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+
+    /***INDEX INICIO***/
+    .aIX {
+        display: inline-block;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+        color: #ffffff;
+        font-weight: 850;
+        letter-spacing: 4px;
+        padding-left: 5px;
+        position: relative; /* ¡Importante! Para que los ::before y ::after funcionen */
+      }
+
+      .aIX::before,
+      .aIX::after,
+      .spanIX::before,
+      .spanIX::after {
+        content: '';
+        position: absolute;
+        width: 88px;
+        height: 88px;
+        background: transparent;
+        transition: 1s;
+        /* -webkit-mix-blend-mode: hue; */
+      }
+
+      .aIX::before {
+        top: -2px;
+        left: -2px;
+        border-top: 8px solid #008C9E;
+        border-left: 8px solid #008C9E;
+      }
+      .aIX::after {
+        top: -2px;
+        right: -2px;
+        border-top: 8px solid #9C9A19;
+        border-right: 8px solid #9C9A19;
+      }
+
+      .spanIX::before {
+        bottom: -2px;
+        left: -2px;
+        border-bottom: 8px solid #E98300;
+        border-left: 8px solid #E98300;
+      }
+      .spanIX::after {
+        bottom: -2px;
+        right: -2px;
+        border-bottom: 8px solid #8E1B32;
+        border-right: 8px solid #8E1B32;
+      }
+
+      .aIX:hover::before,
+      .aIX:hover::after,
+      .aIX:hover .spanIX::before,
+      .aIX:hover .spanIX::after  {
+        width: calc( 280px / 2);
+        height: calc( 50px / 2);
+      }
+
+
+      .ptTitle2{
+          padding-top: 260px;
+          padding-bottom: 50px;
+      }
+    /***INDEX FIN***/
+
+.ShadowImageICON {
+    box-shadow: 5px 5px 8px 5px rgb(20, 20, 20, 0.3);
+    border-radius: 12px;
+    padding: 5px 5px 5px 5px;
+    width: 150px;
+    background: radial-gradient(circle,rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.78) 100%);
 }
+
+.divGrad {
+  background: linear-gradient(0deg,rgba(0, 0, 0, 0) 46%, rgba(73, 23, 109, 1) 100%);
+}
+
+.TituloFF {
+    color: #ffffff;
+    text-align: center;
+    font-weight: 850;
+}
+
+        /* Estilo para pantallas de teléfono (por ejemplo, menos de 600px) */
+        @media (max-width: 600px) {
+          .PhoneNAV {
+            padding-bottom: 750px; /* se baja más */
+          }
+        }
+
+
+/* button hover amazing effect */
+.FST{
+  font-size: 18px;
+  font-weight: 500;
+}
+ .BorderINT {
+  padding: 10px 10px 10px 10px;
+}
+.aEF {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 850;
+  letter-spacing: 4px;
+  padding-left: 5px;
+  position: relative; /* ¡Importante! Para que los ::before y ::after funcionen */
+}
+
+.aEF::before,
+.aEF::after,
+.spanEF::before,
+.spanEF::after {
+	content: '';
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	background: transparent;
+	transition: 1s;
+	/* -webkit-mix-blend-mode: hue; */
+}
+
+.aEF::before {
+	top: -2px;
+	left: -2px;
+	border-top: 8px solid #008C9E;
+	border-left: 8px solid #008C9E;
+}
+.aEF::after {
+	top: -2px;
+	right: -2px;
+	border-top: 8px solid #9C9A19;
+	border-right: 8px solid #9C9A19;
+}
+
+.spanEF::before {
+	bottom: -2px;
+	left: -2px;
+	border-bottom: 8px solid #E98300;
+	border-left: 8px solid #E98300;
+}
+.spanEF::after {
+	bottom: -2px;
+	right: -2px;
+	border-bottom: 8px solid #8E1B32;
+	border-right: 8px solid #8E1B32;
+}
+
+
+
+
+.aEF:hover::before,
+.aEF:hover::after,
+.aEF:hover .spanEF::before,
+.aEF:hover .spanEF::after  {
+	width: calc( 280px / 2);
+	height: calc( 50px / 2);
+}
+
+
+.ptTitle2{
+    padding-top: 260px;
+    padding-bottom: 50px;
+}
+
+      /***DESCARGAS INICIO***/
+      .BorderDW {
+        padding: 20px 20px 20px 20px;
+      }
+
+              /* button hover amazing effect */
+        .aDW {
+          display: inline-block;
+          text-transform: uppercase;
+          text-decoration: none;
+          text-align: center;
+          color: #ffffff;
+          font-weight: 850;
+          letter-spacing: 4px;
+          padding-left: 5px;
+          position: relative; /* ¡Importante! Para que los ::before y ::after funcionen */
+        }
+
+        .aDW::before,
+        .aDW::after,
+        .spanDW::before,
+        .spanDW::after {
+          content: '';
+          position: absolute;
+          width: 24px;
+          height: 24px;
+          background: transparent;
+          transition: 1s;
+          /* -webkit-mix-blend-mode: hue; */
+        }
+
+        .aDW::before {
+          top: -2px;
+          left: -2px;
+          border-top: 8px solid #008C9E;
+          border-left: 8px solid #008C9E;
+        }
+        .aDW::after {
+          top: -2px;
+          right: -2px;
+          border-top: 8px solid #9C9A19;
+          border-right: 8px solid #9C9A19;
+        }
+
+        .spanDW::before {
+          bottom: -2px;
+          left: -2px;
+          border-bottom: 8px solid #E98300;
+          border-left: 8px solid #E98300;
+        }
+        .spanDW::after {
+          bottom: -2px;
+          right: -2px;
+          border-bottom: 8px solid #8E1B32;
+          border-right: 8px solid #8E1B32;
+        }
+
+
+
+
+        .aDW:hover::before,
+        .aDW:hover::after,
+        .aDW:hover .spanDW::before,
+        .aDW:hover .spanDW::after  {
+          width: calc( 280px / 2);
+          height: calc( 50px / 2);
+        }
+
+
+
+
+
+
+        .ptpbDW{
+          padding-top: 20px;
+          padding-bottom: 50px;
+      }
+
+      /***DESCARGAS FIN***/
+
+
+
+/***SIMCI Fin***/
+
+
+
+
+
+
 
 
 
@@ -441,10 +713,7 @@ input:checked +.cardCarrusel > .cardCarrusel-img{
     padding-bottom: 30px;
 }
 
-.ptTitle2{
-    padding-top: 80px;
-    padding-bottom: 30px;
-}
+
 
 .ptTitle4{
     padding-top: 80px;
