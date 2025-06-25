@@ -1,5 +1,49 @@
 /***SIMCI Inicio***/
     /***Flach screen Inicio***/
+
+    /***VIDEO inicio***/
+    .video-container {
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    /***VIDEO fin***/    
+    .TituloPatro{
+      font-weight: 750;
+      letter-spacing: 4px;
+    }
+
+    .carousel-item .row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 240px;
+    }
+    .carousel-item img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+      margin: auto;
+      display: block;
+    }
+
+    .Bcolor {
+    background-color: #49176d;
+    border-color: #49176d;
+    color: #ffffff;
+    }
+
+    .Bcolor:hover {
+        border-color: #724394 !important;
+        background-color: #724394 !important; 
+        color: #ffffff;
+        box-shadow: 0 5px 13px -2px #724394;
+    }
+    .box{
+    background: #ddd1e6;
+    background: linear-gradient(0deg,rgba(221, 209, 230, 1) 0%, rgba(242, 242, 242, 1) 20%, rgba(242, 242, 242, 1) 79%, rgba(221, 209, 230, 1) 100%);
+    }
     /* Estilos para el splash screen */
       html.no-splash #splash-screen {
         display: none; /* Por defecto, oculta splash si es no-splash */
