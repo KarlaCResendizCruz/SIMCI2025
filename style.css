@@ -1,4 +1,136 @@
 /***SIMCI Inicio***/
+    /***Flach screen Inicio***/
+    /* Estilos para el splash screen */
+      html.no-splash #splash-screen {
+        display: none; /* Por defecto, oculta splash si es no-splash */
+      }
+
+      #splash-screen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+        opacity: 1;
+        transition: opacity 0.7s ease;
+      }
+
+      #splash-screen.oculto {
+        opacity: 0;
+        pointer-events: none;
+      }
+
+      /* La imagen del logo */
+      .splash-logo {
+        width: auto;
+        height: auto;
+        animation: parpadeo 1s ease-in-out infinite alternate;
+      }
+
+      /* Efectito de parpadeo del logo */
+      @keyframes parpadeo {
+        from { opacity: 1; }
+        to { opacity: 0.5; }
+      }
+
+
+
+             /* button hover amazing effect */
+        .aSplash {
+          display: inline-block;
+          text-transform: uppercase;
+          text-decoration: none;
+          text-align: center;
+          color: #ffffff;
+          font-weight: 850;
+          letter-spacing: 4px;
+          padding-left: 5px;
+          position: relative; /* ¡Importante! Para que los ::before y ::after funcionen */
+        }
+
+        .aSplash::before,
+        .aSplash::after,
+        .spanSplash::before,
+        .spanSplash::after {
+          content: '';
+          position: absolute;
+          width: 300px;
+          height: 250px;
+          background: transparent;
+          transition: 1s;
+          /* -webkit-mix-blend-mode: hue; */
+        }
+
+        .aSplash::before {
+          top: -2px;
+          left: -2px;
+          border-top: 8px solid #008C9E;
+          border-left: 8px solid #008C9E;
+        }
+        .aSplash::after {
+          top: -2px;
+          right: -2px;
+          border-top: 8px solid #9C9A19;
+          border-right: 8px solid #9C9A19;
+        }
+
+        .spanSplash::before {
+          bottom: -2px;
+          left: -2px;
+          border-bottom: 8px solid #E98300;
+          border-left: 8px solid #E98300;
+        }
+        .spanSplash::after {
+          bottom: -2px;
+          right: -2px;
+          border-bottom: 8px solid #8E1B32;
+          border-right: 8px solid #8E1B32;
+        }
+
+
+
+
+        .aSplash:hover::before,
+        .aSplash:hover::after,
+        .aSplash:hover .spanSplash::before,
+        .aSplash:hover .spanSplash::after  {
+          width: calc( 210px / 2);
+          height: calc( 70px / 2);
+        }
+
+        .BorderSplash {
+        padding: 10px 10px 10px 10px;
+        }
+
+        .bgSplash{
+        background: #49176D;
+        background: linear-gradient(0deg,rgba(73, 23, 109, 1) 0%, rgba(242, 242, 242, 1) 30%, rgba(242, 242, 242, 1) 70%, rgba(73, 23, 109, 1) 100%);
+        }
+
+    /***Flash Screen Fin***/
+
+
+    /**items bajando INDEX***/
+    .DWIX {
+      animation: bajarSuave 1.5s ease-out forwards;
+      opacity: 0;
+      transform: translateY(-30px);
+    }
+
+    @keyframes bajarSuave {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    /**items bajando INDEX***/
+
+
+    /**items bajando inicio***/
     .DWtxt {
       animation: bajarSuave 1.5s ease-out forwards;
       opacity: 0;
@@ -11,6 +143,7 @@
         transform: translateY(0);
       }
     }
+    /**items bajando fin***/
 
 
     /***INDEX INICIO***/
@@ -35,8 +168,8 @@
       .spanIX::after {
         content: '';
         position: absolute;
-        width: 88px;
-        height: 88px;
+        width: 180px;
+        height: 180px;
         background: transparent;
         transition: 1s;
         /* -webkit-mix-blend-mode: hue; */
@@ -72,8 +205,8 @@
       .aIX:hover::after,
       .aIX:hover .spanIX::before,
       .aIX:hover .spanIX::after  {
-        width: calc( 280px / 2);
-        height: calc( 50px / 2);
+        width: calc( 450px / 2);
+        height: calc( 450px / 2);
       }
 
 
@@ -92,7 +225,7 @@
 }
 
 .divGrad {
-  background: linear-gradient(0deg,rgba(0, 0, 0, 0) 46%, rgba(73, 23, 109, 1) 100%);
+  background: linear-gradient(0deg,rgba(0, 0, 0, 0) 77%, rgba(73, 23, 109, 1) 98%);
 }
 
 .TituloFF {
@@ -111,13 +244,13 @@
 
 /* button hover amazing effect */
 .FST{
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 700;
 }
  .BorderINT {
   padding: 0px 10px 0px 10px;
 }
-.aEF {
+.aINT {
   display: inline-block;
   text-transform: uppercase;
   text-decoration: none;
@@ -129,39 +262,39 @@
   position: relative; /* ¡Importante! Para que los ::before y ::after funcionen */
 }
 
-.aEF::before,
-.aEF::after,
-.spanEF::before,
-.spanEF::after {
+.aINT::before,
+.aINT::after,
+.spanINT::before,
+.spanINT::after {
 	content: '';
 	position: absolute;
-	width: 35px;
-	height: 35px;
+	width: 180px;
+	height: 60px;
 	background: transparent;
 	transition: 1s;
 	/* -webkit-mix-blend-mode: hue; */
 }
 
-.aEF::before {
+.aINT::before {
 	top: -2px;
 	left: -2px;
 	border-top: 8px solid #008C9E;
 	border-left: 8px solid #008C9E;
 }
-.aEF::after {
+.aINT::after {
 	top: -2px;
 	right: -2px;
 	border-top: 8px solid #9C9A19;
 	border-right: 8px solid #9C9A19;
 }
 
-.spanEF::before {
+.spanINT::before {
 	bottom: -2px;
 	left: -2px;
 	border-bottom: 8px solid #E98300;
 	border-left: 8px solid #E98300;
 }
-.spanEF::after {
+.spanINT::after {
 	bottom: -2px;
 	right: -2px;
 	border-bottom: 8px solid #8E1B32;
@@ -171,12 +304,12 @@
 
 
 
-.aEF:hover::before,
-.aEF:hover::after,
-.aEF:hover .spanEF::before,
-.aEF:hover .spanEF::after  {
-	width: calc( 280px / 2);
-	height: calc( 50px / 2);
+.aINT:hover::before,
+.aINT:hover::after,
+.aINT:hover .spanINT::before,
+.aINT:hover .spanINT::after  {
+	width: calc( 450px / 2);
+	height: calc( 150px / 2);
 }
 
 
@@ -186,6 +319,15 @@
 }
 
       /***DESCARGAS INICIO***/
+
+      .PosterDW{
+          width: 250px;
+      }
+
+      .fsDW{
+        font-size: 25px;
+        font-weight: 700;
+      }
       .BorderDW {
         padding: 20px 20px 20px 20px;
       }
@@ -209,7 +351,7 @@
         .spanDW::after {
           content: '';
           position: absolute;
-          width: 24px;
+          width: 54px;
           height: 24px;
           background: transparent;
           transition: 1s;
@@ -249,8 +391,8 @@
         .aDW:hover::after,
         .aDW:hover .spanDW::before,
         .aDW:hover .spanDW::after  {
-          width: calc( 280px / 2);
-          height: calc( 50px / 2);
+          width: calc( 210px / 2);
+          height: calc( 70px / 2);
         }
 
 
@@ -262,6 +404,71 @@
           padding-top: 110px;
           padding-bottom: 50px;
       }
+
+              /***Imegenes Descargas Inicio***/ 
+                   .BorderDWimg {
+                        padding: 10px 10px 10px 10px;
+                      }
+                    .aDWimg {
+                        display: inline-block;
+                        text-transform: uppercase;
+                        text-decoration: none;
+                        text-align: center;
+                        color: #ffffff;
+                        font-weight: 850;
+                        letter-spacing: 4px;
+                        padding-left: 5px;
+                        position: relative; /* ¡Importante! Para que los ::before y ::after funcionen */
+                      }
+
+                      .aDWimg::before,
+                      .aDWimg::after,
+                      .spanDWimg::before,
+                      .spanDWimg::after {
+                        content: '';
+                        position: absolute;
+                        width: 88px;
+                        height: 88px;
+                        background: transparent;
+                        transition: 1s;
+                        /* -webkit-mix-blend-mode: hue; */
+                      }
+
+                      .aDWimg::before {
+                        top: -2px;
+                        left: -2px;
+                        border-top: 8px solid #008C9E;
+                        border-left: 8px solid #008C9E;
+                      }
+                      .aDWimg::after {
+                        top: -2px;
+                        right: -2px;
+                        border-top: 8px solid #9C9A19;
+                        border-right: 8px solid #9C9A19;
+                      }
+
+                      .spanDWimg::before {
+                        bottom: -2px;
+                        left: -2px;
+                        border-bottom: 8px solid #E98300;
+                        border-left: 8px solid #E98300;
+                      }
+                      .spanDWimg::after {
+                        bottom: -2px;
+                        right: -2px;
+                        border-bottom: 8px solid #8E1B32;
+                        border-right: 8px solid #8E1B32;
+                      }
+
+                      .aDWimg:hover::before,
+                      .aDWimg:hover::after,
+                      .aDWimg:hover .spanDWimg::before,
+                      .aDWimg:hover .spanDWimg::after  {
+                        width: calc( 280px / 2); /*Tamaño linea after*/
+                        height: calc( 350px / 2); /*Tamaño linea after*/
+                      }
+              /***Imegenes Descargas FIN***/    
+
 
       /***DESCARGAS FIN***/
 
