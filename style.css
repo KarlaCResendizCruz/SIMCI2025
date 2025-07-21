@@ -1,7 +1,98 @@
 /***SIMCI Inicio***/
 
+table, td, th {
+  border: 1px solid #636363;
+  font-size: 15px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.BRtable{
+  border-right: none;
+  text-align: center;
+  padding-left: 80px;
+  color: #49176D;
+}
+
+.TAri{
+  text-align: right;
+}
+
+/***CREDITOS INICIO***/
+.ptTitleCRED{
+    padding-top: 80px;
+}
+
+.ptTitleCRED2{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.TituloMo2 {
+    font-weight: 300;
+}
+.TituloCRED {
+    font-weight: 600;
+}
+/***CREDITOS FIN***/
 
 
+
+
+
+
+  /***Pagination***/
+    .pagination-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+
+    .card-page {
+      display: none;
+    }
+
+    .card-page.active {
+      display: flex;
+    }
+
+    /* Estilo base de botones */
+    .pagination .page-link {
+      background-color: #49176d;
+      color: white;
+      border: 2px solid transparent;
+      transition: all 0.2s ease;
+    }
+
+    /* Hover personalizado */
+    .pagination .page-link:hover {
+      background-color: #5a2587;
+      border-color: #724394;
+    }
+
+    /* Botón activo */
+    .pagination .page-item.active .page-link {
+      background-color: #724394;
+       border: 2px solid #724394;
+      color: white;
+    }
+
+    /* Botón desactivado */
+    .pagination .page-item.disabled .page-link {
+      background-color: #ccc;
+      color: #666;
+      border: none;
+      cursor: not-allowed;
+    }
+    .pagination .page-link:focus {
+      outline: none;
+      box-shadow: 0 0 0 0.25rem rgba(114, 67, 148, 0.5); /* sombra violeta */
+      border-color: #724394;
+    }
+  /***Pagination***/
 
 .bodyCCC {
   overflow-x: hidden;
