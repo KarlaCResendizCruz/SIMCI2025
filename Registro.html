@@ -48,7 +48,7 @@
       </div>
     </div>
 
-    <div class="col-md-12 DWtxt" style="padding-top: 20px; padding-bottom: 20px;">
+    <!--<div class="col-md-12 DWtxt" style="padding-top: 20px; padding-bottom: 20px;">
       <div class="container">
         <div class="row">
           <div class="col-md-3"></div>
@@ -103,15 +103,23 @@
           <div class="col-md-3"></div>
         </div>
       </div>
-    </div>
+    </div>-->
 
-    <div class="col-md-12 DWtxt">
-      <div class="container row">
-        <div class="col-md-3"></div>
-        <div class="col-md-8">
+    <div class="col-md-12 DWtxt" style="padding-top: 50px;">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+          <h3 class="TituloCUOTA">Costo de inscripción:</h3>
+          •	Cuota para <strong class="strongREG">Comunidad UPP</strong> $351.00 M.N<br>
+          • Cuota al público en general $701.00 M.N<br>
+          • Cuota por <strong class="strongREG">Taller</strong> para público en general $351.00 M.N <strong class="strongREG">(Cupo limitado)</strong><br>
+          • Cuota para <strong class="strongREG">Presentación de Cartel</strong> en las modalidades presencial o virtual $1,402.00 M.N (La modalidad presencial incluye kit de bienvenida y acceso a SIMCI para 1 autor)<br>
           <p>
             Es indispensable conservar tu comprobante de pago para el registro.<br>
           </p>
+          </div>
+          <div class="col-md-6">
+
           <p>
             <strong class="strongAM">Datos bancarios:</strong><br>
             <strong class="strongREG">•	Banco:</strong> Banorte<br>
@@ -120,11 +128,16 @@
             <strong class="strongREG">•	Beneficiario:</strong> Universidad Politécnica de Pachuca<br><br>
             <strong class="strongAM">Para factura:</strong><br>
             <em>Envía tus datos fiscales a simci@upp.edu.mx, incluyendo el nombre del participante y el correo de envío. El trámite debe realizarse con anticipación.</em><br>
-          </p>
+          </div>
         </div>
-        <div class="col-md-1"></div>
       </div>
     </div>
+
+
+
+
+
+
 
 
 <div id="footer-placeholder"></div>
@@ -142,25 +155,7 @@
     .then(data => document.getElementById('navbar-placeholder').innerHTML = data);
 </script>
 
-  <!-- Bootstrap JS (opcional, para componentes interactivos como navbar, modales, etc.) -->
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ENjdO4Dr2bkBIFxQpeoA6VKHrTP2U5o9q4nR+7l4U26f4FzJp6G7niu735Sk7lN"
-    crossorigin="anonymous"
-  ></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
-   <script type="importmap">
-    {
-      "imports": {
-        "@popperjs/core": "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/esm/popper.min.js",
-        "bootstrap": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.esm.min.js"
-      }
-    }
-    </script>
-    <script type="module">
-      import * as bootstrap from 'bootstrap'
-
-      new bootstrap.Popover(document.getElementById('popoverButton'))
-    </script>
 </body>
 </html>

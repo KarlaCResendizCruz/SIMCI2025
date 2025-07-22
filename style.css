@@ -1,5 +1,7 @@
 /***SIMCI Inicio***/
-
+.ResponsiveLetter {
+  font-size: calc(0.5em + 1vw);
+}
 table, td, th {
   border: 1px solid #636363;
   font-size: 15px;
@@ -36,6 +38,14 @@ table {
 }
 .TituloCRED {
     font-weight: 600;
+}
+.TituloCOMITE {
+    font-weight: 300;
+    text-align: justify;
+}
+.TituloCOMITE2 {
+    text-align: justify;
+    font-weight: 850;
 }
 /***CREDITOS FIN***/
 
@@ -1766,6 +1776,14 @@ input:checked +.cardCarrusel > .cardCarrusel-img{
     text-align: center;
     font-weight: 850;
 }
+
+.TituloCUOTA{
+    color: #49176d;
+    text-align: center;
+    font-weight: 850;
+}
+
+
 
 .TituloMo {
     text-align: center;

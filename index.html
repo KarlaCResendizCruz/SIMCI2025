@@ -49,10 +49,10 @@
             Este año se incorpora <b class="colorUPP"><em>SIMCI KIDS</em></b>, una versión enfocada en despertar la curiosidad científica en niñas y niños de educación básica 
             mediante actividades lúdicas, talleres y conferencias interactivas.
           </p>
-          <a href="2025/docs/home/Convocatoria_ SIMCI2025.pdf" class="btn btn-primary Bcolor">Consulta convocatoria</a><br><br>
+          <a href="2025/docs/home/Convocatoria_SIMCI2025.pdf" class="btn btn-primary Bcolor">Consulta convocatoria</a><br><br>
         </div>
         <div class="col-md-6 text-center" style="padding-bottom: 40px;">
-          <img src="2025/imagenes/home/VIDEO.png" class="img-fluid ShadowImage" alt="SIMCI">
+          <img src="2025/imagenes/home/SIMCI.png" class="img-fluid ShadowImage" alt="SIMCI">
           <!--
           <div class="container my-5">
             <div class="ratio ratio-16x9 video-container">
@@ -124,46 +124,12 @@
     .then(data => document.getElementById('navbar-placeholder').innerHTML = data);
 </script>
 
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-  const splash = document.getElementById('splash-screen');
-  const contenido = document.querySelector('.contenido-principal');
-
-  // Esperamos 3 segundos y luego ocultamos el splash
-  setTimeout(() => {
-    splash.classList.add('oculto'); // Hace que se desvanezca
-    setTimeout(() => {
-      splash.style.display = 'none';
-      contenido.style.display = 'block';
-    }, 700); // tiempo del fade-out
-  }, 3000); // tiempo que se ve el splash
-});
-</script>
-
-
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 
 
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ENjdO4Dr2bkBIFxQpeoA6VKHrTP2U5o9q4nR+7l4U26f4FzJp6G7niu735Sk7lN"
-    crossorigin="anonymous"></script>
 
-   <script type="importmap">
-    {
-      "imports": {
-        "@popperjs/core": "https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/esm/popper.min.js",
-        "bootstrap": "https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.esm.min.js"
-      }
-    }
-    </script>
-    <script type="module">
-      import * as bootstrap from 'bootstrap'
-
-      new bootstrap.Popover(document.getElementById('popoverButton'))
-    </script>
 </body>
 </html>
