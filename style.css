@@ -1,4 +1,44 @@
 /***SIMCI Inicio***/
+
+    .titulo-comite {
+      font-weight: 900;
+      font-size: 2.5rem;
+      color: #960b33; /* Rojo vino */
+    }
+
+    .categoria {
+      font-weight: 700;
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .cbs { color: #512C4D; }         /* Morado oscuro */
+    .ci { color: #99902B; }          /* Verde mostaza */
+    .ef { color: #198BA5; }          /* Azul petróleo */
+    .ia { color: #DA892B; }          /* Naranja */
+    .logistico { color: #4B2E83; }   /* Morado */
+
+    .nombre {
+      color: #333;
+      font-weight: 300;
+      font-size: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .categoria { text-align: center; }
+      .nombre { text-align: center; }
+    }
+
+
+
+
+
+
+
+
+
+
+
 .ResponsiveLetter {
   font-size: calc(0.5em + 1vw);
 }
@@ -41,7 +81,7 @@ table {
 }
 .TituloCOMITE {
     font-weight: 300;
-    text-align: justify;
+    text-align: left !important;
 }
 .TituloCOMITE2 {
     text-align: justify;
